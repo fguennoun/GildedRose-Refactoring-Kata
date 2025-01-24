@@ -11,9 +11,9 @@ class GildedRose {
         for (Item item : items) {
             switch (item.getName()) {
                 case "Aged Brie" -> updateAgedBrie(item);
-                case "Sulfuras" -> updateSulfuras(item);
-                case "Backstage passes" -> updateBackstagePasses(item);
-                case "Conjured" -> updateConjured(item);
+                case "Sulfuras, Hand of Ragnaros" -> updateSulfuras(item);
+                case "Backstage passes to a TAFKAL80ETC concert" -> updateBackstagePasses(item);
+                case "Conjured Mana Cake" -> updateConjured(item);
                 default -> updateNormalItem(item);
             }
         }
@@ -48,7 +48,7 @@ class GildedRose {
             if (item.getSellIn() <= 10) {
                 increaseQualityIfBelowMax(item);
             }
-            if (item.getSellIn()  <= 5) {
+            if (item.getSellIn() <= 5) {
                 increaseQualityIfBelowMax(item);
             }
         }
